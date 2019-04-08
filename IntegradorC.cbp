@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Bibliotecas/CItemMenu.h" />
+		<Unit filename="Bibliotecas/Fecha.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/Fecha.h" />
 		<Unit filename="Bibliotecas/Tipos.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -43,6 +47,15 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Bibliotecas/mstring.h" />
+		<Unit filename="Tests/Tests.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tests/Tests.h" />
+		<Unit filename="Tests/TestsFechas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tests/TestsFechas.h" />
+		<Unit filename="Tests/TestsTipos.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

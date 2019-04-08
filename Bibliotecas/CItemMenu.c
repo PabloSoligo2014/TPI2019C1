@@ -5,6 +5,12 @@
 #include "CItemMenu.h"
 #include "mstring.h"
 
+
+void clearScreen()
+{
+  system("@cls||clear");
+}
+
 CItemMenu* crearMenuRaiz(){
     int i = 0;
 
@@ -86,7 +92,7 @@ void StartApp(CItemMenu* root){
     char op;
     int iop;
     t_appAction act;
-
+    clearScreen();
     op = selectOption(root);
     while(op!=27){
         iop = CHARTOINT(op)-1;
@@ -100,6 +106,7 @@ void StartApp(CItemMenu* root){
             //Verificar que el submenu no sea null
             StartApp(root->submenu[iop]);
         }
+        clearScreen();
         op = selectOption(root);
     }
     return;
