@@ -31,15 +31,6 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="../Bibliotecas/CItemMenu.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../Bibliotecas/CItemMenu.h" />
-		<Unit filename="../Bibliotecas/Tipos.h" />
-		<Unit filename="../Bibliotecas/mstring.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="../Bibliotecas/mstring.h" />
 		<Unit filename="Bibliotecas/CItemMenu.c">
 			<Option compilerVar="CC" />
 		</Unit>
