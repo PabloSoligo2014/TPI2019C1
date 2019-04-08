@@ -1,0 +1,88 @@
+# depslib dependency file v1.0
+1544468491 source:c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\listadoble.c
+	"ListaDoble.h"
+	"stdlib.h"
+
+1546021741 source:c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\integradorc\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"../Bibliotecas/CItemMenu.h"
+
+1544466599 c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\listadoble.h
+	"Tipos.h"
+
+1553518614 c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\tipos.h
+
+1545426162 source:/home/psoligo/git/Programacion/Bibliotecas/CItemMenu.c
+	"CItemMenu.h"
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"../Bibliotecas/mstring.h"
+
+1545425724 source:/home/psoligo/git/Programacion/IntegradorC/main.c
+	<stdio.h>
+	<stdlib.h>
+	"../Bibliotecas/CItemMenu.h"
+
+1545425479 /home/psoligo/git/Programacion/Bibliotecas/CItemMenu.h
+	"../Bibliotecas/Tipos.h"
+
+1544566039 /home/psoligo/git/Programacion/Bibliotecas/Tipos.h
+
+1545418442 source:/home/psoligo/git/Programacion/Bibliotecas/mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+
+1545417098 /home/psoligo/git/Programacion/Bibliotecas/mstring.h
+
+1546021885 source:c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\citemmenu.c
+	"CItemMenu.h"
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"../Bibliotecas/mstring.h"
+
+1546021507 c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\citemmenu.h
+	"../Bibliotecas/Tipos.h"
+
+1554119743 c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\mstring.h
+
+1554122004 source:c:\users\pabli\onedrive - universidad nacional de la matanza\unlam\programacion2\ejercicios\all\bibliotecas\mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+	"Tipos.h"
+
+1553519075 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\tipos.c
+	"Tipos.h"
+
+1553518614 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\tipos.h
+
+1554726026 source:c:\users\pabli\source\repos\tpi2019c1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	"Bibliotecas/CItemMenu.h"
+
+1554725557 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.h
+	"Tipos.h"
+
+1554122004 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+	"Tipos.h"
+
+1554119743 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\mstring.h
+
+1554726070 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<conio.h>
+	"CItemMenu.h"
+	"mstring.h"
+
