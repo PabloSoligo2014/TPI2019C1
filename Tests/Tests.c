@@ -7,15 +7,20 @@
 
 int EjecutarTests(){
     char msg[100];
-    t_tstfun atest[] = {&testCrearFechas};
+    t_tstfun atest[] = {    &testCrearFechaInvalida,
+                            &testComparacionFechas01
 
-    for(int i=0; i<sizeof(t_tstfun)/4;i++){
+                        };
+    puts("----------------------------------------------------------");
+    for(int i=0; i<sizeof(atest)/4;i++){
 
-        if (!atest[i](msg)){
-            printf("Fallo test %s", msg);
-            return 0;
+        if (atest[i](msg)){
+            printf("TEST %02d FALLO  : %s\n", i,msg);
+        }else{
+            printf("TEST %02d OK     : %s\n", i,msg);
         }
     }
+    puts("----------------------------------------------------------");
     return 1;
 
 }

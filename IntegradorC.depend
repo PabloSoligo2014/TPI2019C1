@@ -61,7 +61,7 @@
 
 1553518614 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\tipos.h
 
-1554761886 source:c:\users\pabli\source\repos\tpi2019c1\main.c
+1554921169 source:c:\users\pabli\source\repos\tpi2019c1\main.c
 	<stdio.h>
 	<stdlib.h>
 	<conio.h>
@@ -87,20 +87,21 @@
 	"CItemMenu.h"
 	"mstring.h"
 
-1554761676 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\fecha.c
+1554921710 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\fecha.c
 	"Fecha.h"
 
-1554761632 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\fecha.h
+1554921677 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\fecha.h
 
 1554761128 c:\users\pabli\source\repos\tpi2019c1\tests\tests.h
 
-1554761827 source:c:\users\pabli\source\repos\tpi2019c1\tests\testsfechas.c
+1554922033 source:c:\users\pabli\source\repos\tpi2019c1\tests\testsfechas.c
 	"TestsFechas.h"
 	"../Bibliotecas/Fecha.h"
+	<string.h>
 
-1554761387 c:\users\pabli\source\repos\tpi2019c1\tests\testsfechas.h
+1554921771 c:\users\pabli\source\repos\tpi2019c1\tests\testsfechas.h
 
-1554762182 source:c:\users\pabli\source\repos\tpi2019c1\tests\tests.c
+1554922398 source:c:\users\pabli\source\repos\tpi2019c1\tests\tests.c
 	<stdio.h>
 	"Tests.h"
 	"TestsTipos.h"
