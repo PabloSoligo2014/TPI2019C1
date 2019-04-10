@@ -67,7 +67,10 @@ int showMenu(CItemMenu* root){
 
 char selectOption(CItemMenu* root){
     int ops = 0;
-    printf("Seleccione un opcion, q para salir: \n");
+    //puts("------------------------------------------------");
+    printf("Seleccione un opcion:\n");
+    puts("-------------------------");
+
     char op;
     for(int i=0; i<MAX_SUBMENU;i++){
         if(root->submenu[i]!=NULL){
@@ -79,7 +82,8 @@ char selectOption(CItemMenu* root){
     if(ops==0){
         puts("Funcion no implementada/No existen opciones de menu...");
     }
-    printf("%s.%s\n","ESC", "Para volver...");
+    puts("-------------------------");
+    printf("%s %s","ESCAPE (Esc)", ", para volver...");
     fflush(stdin);
     op = _getch();
     //scanf("%s",sel);
@@ -98,6 +102,7 @@ void StartApp(CItemMenu* root){
         iop = CHARTOINT(op)-1;
         if (root->submenu[iop]->action!=NULL){
             act = root->submenu[iop]->action;
+            clearScreen();
             act(NULL);
             puts("\nPresione cualquier tecla para continuar...");
             _getch();
