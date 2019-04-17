@@ -1,14 +1,28 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-#include <conio.h>
+
+//Se quita conio para hacer multiplataforma la aplicacion
+//#include <conio.h>
+#include "xplatform/XPlatform.h"
 #include "CItemMenu.h"
 #include "mstring.h"
+#define ESC 27
 
+void clean_stdin(void)
+{
+    int c;
+    do {
+        c = getchar();
+    } while (c != '\n' && c != EOF);
+}
 
 void clearScreen()
 {
-  system("@cls||clear");
+  //Esto no es multiplataforma!
+  //system("@cls||clear");
+
+  xplt_clrscr();
 }
 
 CItemMenu* crearMenuRaiz(){
@@ -67,11 +81,12 @@ int showMenu(CItemMenu* root){
 
 char selectOption(CItemMenu* root){
     int ops = 0;
+    char op;
     //puts("------------------------------------------------");
     printf("Seleccione un opcion:\n");
     puts("-------------------------");
 
-    char op;
+    //char op;
     for(int i=0; i<MAX_SUBMENU;i++){
         if(root->submenu[i]!=NULL){
             printf("%d.%s\n",i+1, root->submenu[i]->desc);
@@ -83,9 +98,15 @@ char selectOption(CItemMenu* root){
         puts("Funcion no implementada/No existen opciones de menu...");
     }
     puts("-------------------------");
-    printf("%s %s","ESCAPE (Esc)", ", para volver...");
-    fflush(stdin);
-    op = _getch();
+    printf("%s %s","ESCAPE (Esc)", ", para volver...\n-->");
+    //clean_stdin();
+    op = xplt_getch();
+    //scanf("%d", &iop);
+
+
+    //La version monoplataforma puede usar conio+getch y no es necesario el "enter" despues de seleccionar
+    //menu, como contra solo va a 0/1 a 9
+    //op = _getch();
     //scanf("%s",sel);
     return op;
 
@@ -93,23 +114,27 @@ char selectOption(CItemMenu* root){
 }
 
 void StartApp(CItemMenu* root){
+    //char op;
     char op;
-    int iop;
+
     t_appAction act;
     clearScreen();
     op = selectOption(root);
-    while(op!=27){
-        iop = CHARTOINT(op)-1;
-        if (root->submenu[iop]->action!=NULL){
-            act = root->submenu[iop]->action;
+    while(op!=ESC){
+        //iop = CHARTOINT(op)-1;
+        if (root->submenu[(op-48)-1]->action!=NULL){
+            //Recomendacion, no manejarse con ASCII si se pretende que el codigo sea mantenible
+            act = root->submenu[(op-48)-1]->action;
             clearScreen();
             act(NULL);
+
             puts("\nPresione cualquier tecla para continuar...");
-            _getch();
+            clean_stdin();
+            xplt_getch();
 
         }else{
             //Verificar que el submenu no sea null
-            StartApp(root->submenu[iop]);
+            StartApp(root->submenu[(op-48)-1]);
         }
         clearScreen();
         op = selectOption(root);

@@ -47,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Bibliotecas/mstring.h" />
+		<Unit filename="Bibliotecas/xplatform/XPlatform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Bibliotecas/xplatform/XPlatform.h" />
 		<Unit filename="Tests/Tests.c">
 			<Option compilerVar="CC" />
 		</Unit>

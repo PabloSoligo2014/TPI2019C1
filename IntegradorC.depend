@@ -109,3 +109,65 @@
 
 1554762075 c:\users\pabli\source\repos\tpi2019c1\tests\teststipos.h
 
+1555533046 source:/home/psoligo/git/TPI2019C1/Bibliotecas/Fecha.c
+	"Fecha.h"
+
+1555533046 /home/psoligo/git/TPI2019C1/Bibliotecas/Fecha.h
+
+1555533046 source:/home/psoligo/git/TPI2019C1/Bibliotecas/mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+	"Tipos.h"
+
+1555533046 /home/psoligo/git/TPI2019C1/Bibliotecas/mstring.h
+
+1555533046 /home/psoligo/git/TPI2019C1/Bibliotecas/Tipos.h
+
+1555533046 source:/home/psoligo/git/TPI2019C1/Bibliotecas/Tipos.c
+	"Tipos.h"
+
+1555533145 source:/home/psoligo/git/TPI2019C1/main.c
+	<stdio.h>
+	<stdlib.h>
+	"Bibliotecas/CItemMenu.h"
+	"Tests/Tests.h"
+
+1555536432 /home/psoligo/git/TPI2019C1/Bibliotecas/CItemMenu.h
+	"Tipos.h"
+
+1555533046 /home/psoligo/git/TPI2019C1/Tests/Tests.h
+
+1555534710 source:/home/psoligo/git/TPI2019C1/Tests/Tests.c
+	<stdio.h>
+	"Tests.h"
+	"TestsTipos.h"
+	"TestsFechas.h"
+
+1555533046 /home/psoligo/git/TPI2019C1/Tests/TestsTipos.h
+
+1555533046 /home/psoligo/git/TPI2019C1/Tests/TestsFechas.h
+
+1555533046 source:/home/psoligo/git/TPI2019C1/Tests/TestsFechas.c
+	"TestsFechas.h"
+	"../Bibliotecas/Fecha.h"
+	<string.h>
+
+1555536181 source:/home/psoligo/git/TPI2019C1/Bibliotecas/CItemMenu.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	"xplatform/XPlatform.h"
+	"CItemMenu.h"
+	"mstring.h"
+
+1512394526 source:/home/psoligo/git/TPI2019C1/Bibliotecas/xplatform/XPlatform.c
+	"XPlatform.h"
+
+1512394526 /home/psoligo/git/TPI2019C1/Bibliotecas/xplatform/XPlatform.h
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<stdio.h>
+
