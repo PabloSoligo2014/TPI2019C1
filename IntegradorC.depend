@@ -61,10 +61,9 @@
 
 1553518614 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\tipos.h
 
-1554922712 source:c:\users\pabli\source\repos\tpi2019c1\main.c
+1555681152 source:c:\users\pabli\source\repos\tpi2019c1\main.c
 	<stdio.h>
 	<stdlib.h>
-	<conio.h>
 	"Bibliotecas/CItemMenu.h"
 	"Tests/Tests.h"
 
@@ -79,11 +78,11 @@
 
 1554119743 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\mstring.h
 
-1554923514 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.c
+1555682281 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.c
 	<stdlib.h>
 	<string.h>
 	<stdio.h>
-	<conio.h>
+	"xplatform/XPlatform.h"
 	"CItemMenu.h"
 	"mstring.h"
 
@@ -101,7 +100,7 @@
 
 1554921771 c:\users\pabli\source\repos\tpi2019c1\tests\testsfechas.h
 
-1554922398 source:c:\users\pabli\source\repos\tpi2019c1\tests\tests.c
+1555681152 source:c:\users\pabli\source\repos\tpi2019c1\tests\tests.c
 	<stdio.h>
 	"Tests.h"
 	"TestsTipos.h"
@@ -165,6 +164,16 @@
 	"XPlatform.h"
 
 1512394526 /home/psoligo/git/TPI2019C1/Bibliotecas/xplatform/XPlatform.h
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<stdio.h>
+
+1555681152 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\xplatform\xplatform.c
+	"XPlatform.h"
+
+1555681152 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\xplatform\xplatform.h
 	<stdlib.h>
 	<windows.h>
 	<conio.h>

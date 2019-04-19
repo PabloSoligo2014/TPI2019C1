@@ -71,7 +71,8 @@ int addSubmenu(CItemMenu* root, char* code, char* desc, t_appAction act){
 
 int showMenu(CItemMenu* root){
     //Siempre se muestran los submenues del pasado como parametro
-    for(int i=0; i<MAX_SUBMENU;i++){
+    int i;
+    for(i=0; i<MAX_SUBMENU;i++){
         if(root->submenu[i]!=NULL){
             printf("%d.%s\n",i+1, root->submenu[i]->desc);
         }
@@ -87,7 +88,8 @@ char selectOption(CItemMenu* root){
     puts("-------------------------");
 
     //char op;
-    for(int i=0; i<MAX_SUBMENU;i++){
+    int i;
+    for(i=0; i<MAX_SUBMENU;i++){
         if(root->submenu[i]!=NULL){
             printf("%d.%s\n",i+1, root->submenu[i]->desc);
             ops++;
@@ -123,14 +125,14 @@ void StartApp(CItemMenu* root){
     while(op!=ESC){
         //iop = CHARTOINT(op)-1;
         if (root->submenu[(op-48)-1]->action!=NULL){
-            //Recomendacion, no manejarse con ASCII si se pretende que el codigo sea mantenible
+            //Recomendacion, en aplicaciones reales (No academicas) no asumir ASCII.
             act = root->submenu[(op-48)-1]->action;
             clearScreen();
             act(NULL);
 
             puts("\nPresione cualquier tecla para continuar...");
-            clean_stdin();
-            xplt_getch();
+            //clean_stdin();
+            getch();
 
         }else{
             //Verificar que el submenu no sea null
