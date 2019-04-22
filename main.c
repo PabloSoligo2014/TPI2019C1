@@ -9,8 +9,6 @@ int main()
     CItemMenu* root = crearMenuRaiz();
 
     /*Agregar menues desde aca*/
-
-
     addSubmenu(root, "9", "Tests", NULL);
         addSubmenu(root, "9.1", "Test de fechas", &EjecutarTests);
     /*Cierre de region de menus*/

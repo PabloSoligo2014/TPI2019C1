@@ -61,7 +61,7 @@
 
 1553518614 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\tipos.h
 
-1555681152 source:c:\users\pabli\source\repos\tpi2019c1\main.c
+1555933230 source:c:\users\pabli\source\repos\tpi2019c1\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Bibliotecas/CItemMenu.h"
@@ -78,7 +78,7 @@
 
 1554119743 c:\users\pabli\source\repos\tpi2019c1\bibliotecas\mstring.h
 
-1555682281 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.c
+1555682383 source:c:\users\pabli\source\repos\tpi2019c1\bibliotecas\citemmenu.c
 	<stdlib.h>
 	<string.h>
 	<stdio.h>
