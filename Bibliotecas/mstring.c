@@ -5,6 +5,13 @@
 
 #include "Tipos.h"
 
+
+char* normalizarNyAp(char* frase){
+    //Implementar aqui la funcion
+    return frase;
+}
+
+
 int getEvent(char c){
     if (ISALPHA(c)){
         return 1;
@@ -93,112 +100,6 @@ int NoPalabraFin(void* params){
 
 
 
-char* mnormalizar_pormatriz(char* cad){
-
-    t_meparam param;
-    t_action me[3][3] = {
-                            { NULL          , defaultLetra  , defaultFin},
-                            { PalabraNoLetra, PalabraLetra  , PalabraFin},
-                            { NULL          , NoPalabraLetra, NoPalabraFin}
-                        };
-
-
-    int acontinue = 1;
-    param.piv = cad;
-    param.pa = cad;
-    param.ep = esDefault;
-
-
-    while(acontinue){
-        int eve = getEvent(*param.piv);
-
-        if (me[param.ep][eve]!=NULL){
-            acontinue = me[param.ep][eve](&param);
-        }
-
-
-        param.piv++;
-    }
-
-
-
-    return cad;
-}
-
-
-char* mnormalizar(char* cad){
-    //Normaliza una cadena sobre la cadena misma
-    //Version sin punteros a funciones
-    char* piv = cad;
-    char* pi  = cad;
-    //0. NO es alfa, 1. Es alfa, 2 es fin de cadena
-    int eve;
-    enum TEstadoPalabra estado = esDefault;
-    int terminated = 0;
-    while(!terminated){
-        eve = getEvent(*piv);
-        switch(eve){
-            case 0: //No es alfa
-                switch(estado){
-                    case esDefault:
-                        break;
-                    case esPalabra:
-                        estado=esNoPalabra;
-                        break;
-                    case esNoPalabra:
-                        break;
-                }
-
-                break;
-            case 1: //Es Alfa
-                switch(estado){
-                    case esDefault:
-                        TOUPPER(*piv);
-                        swap(piv, pi);
-                        pi++;
-                        estado = esPalabra;
-                        break;
-                    case esPalabra:
-                        TOLOWER(*piv);
-                        swap(piv, pi);
-                        pi++;
-                        break;
-                    case esNoPalabra:
-                        TOUPPER(*piv);
-                        *pi=' ';
-                        pi++;
-                        swap(piv, pi);
-                        pi++;
-                        estado = esPalabra;
-                        break;
-                }
-                break;
-            case 2: //Es fin cadena
-                switch(estado){
-                    case esDefault:
-                        swap(piv, pi);
-                        terminated = 1;
-                        break;
-                    case esPalabra:
-                        swap(piv, pi);
-                        terminated = 1;
-                        break;
-                    case esNoPalabra:
-                        swap(piv, pi);
-                        terminated = 1;
-                        break;
-                }
-                break;
-
-        }
-        piv++;
-    };
-
-
-
-
-    return cad;
-}
 
 int mstrpartir(char* code, int* v){
     char aux[24];

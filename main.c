@@ -10,7 +10,8 @@ int main()
 
     /*Agregar menues desde aca*/
     addSubmenu(root, "9", "Tests", NULL);
-        addSubmenu(root, "9.1", "Test de fechas", &EjecutarTests);
+        addSubmenu(root, "9.1", "Test de fechas", &EjecutarTestsFechas);
+        addSubmenu(root, "9.2", "Test de cadenas", &EjecutarTestsCadenas);
     /*Cierre de region de menus*/
 
     StartApp(root);

@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
-
+#include <ctype.h>
 //Se quita conio para hacer multiplataforma la aplicacion
 //#include <conio.h>
 #include "xplatform/XPlatform.h"
@@ -124,19 +124,25 @@ void StartApp(CItemMenu* root){
     op = selectOption(root);
     while(op!=ESC){
         //iop = CHARTOINT(op)-1;
-        if (root->submenu[(op-48)-1]->action!=NULL){
-            //Recomendacion, en aplicaciones reales (No academicas) no asumir ASCII.
-            act = root->submenu[(op-48)-1]->action;
-            clearScreen();
-            act(NULL);
+        if (isdigit(op)&&(op!=ESC)) {
+            if (root->submenu[(op-48)-1]->action!=NULL){
+                //Recomendacion, en aplicaciones reales (No academicas) no asumir ASCII.
+                act = root->submenu[(op-48)-1]->action;
+                clearScreen();
+                act(NULL);
 
-            puts("\nPresione cualquier tecla para continuar...");
+                puts("\nPresione cualquier tecla para continuar...");
+                //clean_stdin();
+                getch();
+
+            }else{
+                //Verificar que el submenu no sea null
+                StartApp(root->submenu[(op-48)-1]);
+            }
+        }else{
+            puts("\nOpcin no valida.\nPresione cualquier tecla para continuar...");
             //clean_stdin();
             getch();
-
-        }else{
-            //Verificar que el submenu no sea null
-            StartApp(root->submenu[(op-48)-1]);
         }
         clearScreen();
         op = selectOption(root);

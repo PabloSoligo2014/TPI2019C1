@@ -1,6 +1,7 @@
 #ifndef TESTS_H_INCLUDED
 #define TESTS_H_INCLUDED
 
-int EjecutarTests();
+int EjecutarTestsFechas();
+int EjecutarTestsCadenas();
 
 #endif // TESTS_H_INCLUDED

@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="Tests/Tests.h" />
+		<Unit filename="Tests/TestsCadenas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Tests/TestsCadenas.h" />
 		<Unit filename="Tests/TestsFechas.c">
 			<Option compilerVar="CC" />
 		</Unit>
