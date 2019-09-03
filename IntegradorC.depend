@@ -213,10 +213,10 @@
 
 1567536487 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.h
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.c
+1567538066 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.c
 	"Fecha.h"
 
-1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
+1567538059 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
 
 1567536474 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
 	"mstring.h"
@@ -224,15 +224,18 @@
 	<stdlib.h>
 	"Tipos.h"
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\tipos.c
+1567538034 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\tipos.c
+	<stdio.h>
 	"Tipos.h"
 
 1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\xplatform\xplatform.c
 	"XPlatform.h"
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
+1567538104 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
 	<stdio.h>
 	<stdlib.h>
+	<time.h>
+	"Bibliotecas/Fecha.h"
 	"Bibliotecas/CItemMenu.h"
 	"Tests/Tests.h"
 

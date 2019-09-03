@@ -1,3 +1,6 @@
+#include <stdio.h>
+
+
 #include "Tipos.h"
 
 /*    unsigned long dni;
