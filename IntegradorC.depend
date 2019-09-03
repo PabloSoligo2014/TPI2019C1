@@ -190,3 +190,75 @@
 	<string.h>
 	<stdio.h>
 
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\citemmenu.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<ctype.h>
+	"xplatform/XPlatform.h"
+	"CItemMenu.h"
+	"mstring.h"
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\xplatform\xplatform.h
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<stdio.h>
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\citemmenu.h
+	"Tipos.h"
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\tipos.h
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.h
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.c
+	"Fecha.h"
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+	"Tipos.h"
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\tipos.c
+	"Tipos.h"
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\xplatform\xplatform.c
+	"XPlatform.h"
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Bibliotecas/CItemMenu.h"
+	"Tests/Tests.h"
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.h
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.c
+	<stdio.h>
+	"Tests.h"
+	"TestsTipos.h"
+	"TestsFechas.h"
+	"TestsCadenas.h"
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\teststipos.h
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.h
+
+1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.h
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.c
+	"TestsCadenas.h"
+	"../Bibliotecas/mstring.h"
+	<string.h>
+	<stdio.h>
+
+1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.c
+	"TestsFechas.h"
+	"../Bibliotecas/Fecha.h"
+	<string.h>
+
