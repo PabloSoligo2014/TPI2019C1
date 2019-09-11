@@ -265,3 +265,72 @@
 	"../Bibliotecas/Fecha.h"
 	<string.h>
 
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\citemmenu.c
+	<stdlib.h>
+	<string.h>
+	<stdio.h>
+	<ctype.h>
+	"xplatform/XPlatform.h"
+	"CItemMenu.h"
+	"mstring.h"
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\xplatform\xplatform.h
+	<stdlib.h>
+	<windows.h>
+	<conio.h>
+	<unistd.h>
+	<stdio.h>
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\citemmenu.h
+	"Tipos.h"
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\tipos.h
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\mstring.h
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\fecha.c
+	"Fecha.h"
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\fecha.h
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\tipos.c
+	<stdio.h>
+	"Tipos.h"
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\xplatform\xplatform.c
+	"XPlatform.h"
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"Bibliotecas/Fecha.h"
+	"Bibliotecas/CItemMenu.h"
+	"Tests/Tests.h"
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\tests.h
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\tests.c
+	<stdio.h>
+	"Tests.h"
+	"TestsTipos.h"
+	"TestsFechas.h"
+	"TestsCadenas.h"
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\teststipos.h
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testsfechas.h
+
+1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.h
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.c
+	"TestsCadenas.h"
+	"../Bibliotecas/mstring.h"
+	<string.h>
+	<stdio.h>
+
+1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testsfechas.c
+	"TestsFechas.h"
+	"../Bibliotecas/Fecha.h"
+	<string.h>
+
