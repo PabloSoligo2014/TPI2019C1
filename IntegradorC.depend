@@ -218,7 +218,7 @@
 
 1567538059 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
 
-1567536474 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
+1568636455 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
 	"mstring.h"
 	<string.h>
 	<stdlib.h>
@@ -231,7 +231,7 @@
 1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\xplatform\xplatform.c
 	"XPlatform.h"
 
-1567538104 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
+1567542461 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -241,7 +241,7 @@
 
 1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.h
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.c
+1568636623 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.c
 	<stdio.h>
 	"Tests.h"
 	"TestsTipos.h"
@@ -252,9 +252,9 @@
 
 1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.h
 
-1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.h
+1568636066 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.h
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.c
+1568636490 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.c
 	"TestsCadenas.h"
 	"../Bibliotecas/mstring.h"
 	<string.h>

@@ -30,9 +30,10 @@ int EjecutarTestsFechas(){
 
 int EjecutarTestsCadenas(){
     char msg[500];
-    t_tstfun atest[] = { &testNormalizarCadenaNyAp01,
-                         &testNormalizarCadenaNyAp02
-
+    t_tstfun atest[] = {
+                            &testNormalizarCadenaNyAp01,
+                            &testNormalizarCadenaNyAp02,
+                            &testNormalizarCadenaNyAp03
                         };
     puts("----------------------------------------------------------");
     //De esta manera no importa si tengo compilador de 16, 32 o 64 bits
@@ -45,6 +46,8 @@ int EjecutarTestsCadenas(){
             printf("TEST %02d OK   : %s\n", i,msg);
         }
     }
+
+
     puts("----------------------------------------------------------");
     return 1;
 

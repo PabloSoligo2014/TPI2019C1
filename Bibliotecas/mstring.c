@@ -48,9 +48,9 @@ char* normalizarNyAp(char* frase)
 
         // We only need to change these flags under two circumstances: At the first space after a word, and at the first letter after a space.
         /// Estos dos if's (lineas 51 y 53) me dan un warning de poner parentesis alrededor del AND dentro del OR, pero no hay ningun OR???
-        if (isSpaceAfterLetter && !ISALPHA(*reader))
+        if ( (isSpaceAfterLetter) && (!ISALPHA(*reader)))
             isSpaceAfterLetter = 0;
-        if (!isSpaceAfterLetter && ISALPHA(*reader))
+        if ((!isSpaceAfterLetter) && (ISALPHA(*reader)))
             isSpaceAfterLetter = 1;
 
         // After operating, we move to the next character.
