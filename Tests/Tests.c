@@ -33,7 +33,11 @@ int EjecutarTestsCadenas(){
     t_tstfun atest[] = {
                             &testNormalizarCadenaNyAp01,
                             &testNormalizarCadenaNyAp02,
-                            &testNormalizarCadenaNyAp03
+                            &testNormalizarCadenaNyAp03,
+                            &testNormalizarCadenaNyAp04,
+                            &testNormalizarCadenaNyAp05,
+                            &testNormalizarCadenaNyAp06,
+                            &testNormalizarCadenaNyAp07
                         };
     puts("----------------------------------------------------------");
     //De esta manera no importa si tengo compilador de 16, 32 o 64 bits

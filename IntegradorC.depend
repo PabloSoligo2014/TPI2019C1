@@ -310,7 +310,7 @@
 
 1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\tests.h
 
-1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\tests.c
+1568682673 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\tests.c
 	<stdio.h>
 	"Tests.h"
 	"TestsTipos.h"
@@ -321,9 +321,9 @@
 
 1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testsfechas.h
 
-1568224647 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.h
+1568682673 e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.h
 
-1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.c
+1568682799 source:e:\february twenty-sixth, 2019\_university\programming i\final project\tests\testscadenas.c
 	"TestsCadenas.h"
 	"../Bibliotecas/mstring.h"
 	<string.h>
@@ -333,4 +333,10 @@
 	"TestsFechas.h"
 	"../Bibliotecas/Fecha.h"
 	<string.h>
+
+1568682498 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\mstring.c
+	"mstring.h"
+	<string.h>
+	<stdlib.h>
+	"Tipos.h"
 

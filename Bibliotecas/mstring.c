@@ -6,6 +6,19 @@
 #include "Tipos.h"
 
 
+char* shiftRight(char* sentence, int spaces)
+{
+    char* original = sentence;
+    while (*sentence != '\0') {
+        sentence++;
+    }
+    while (sentence > original) {
+        *(sentence + spaces) = *sentence;
+        sentence--;
+    }
+    return original;
+}
+
 char* normalizarNyAp(char* frase)
 {
     char isSpaceAfterLetter = 0,
@@ -18,7 +31,7 @@ char* normalizarNyAp(char* frase)
 
     while (*reader != '\0') {
         // The only valid characters are letters, spaces, and commas. All others get ignored.
-        if (ISALPHA(*reader) || (*reader == ' ' && isSpaceAfterLetter) || *reader == ',') {
+        if (ISALPHA(*reader) || (*reader == ' ' && isSpaceAfterLetter) || (*reader == ',' && !isSurnameDone)) {
             if (ISALPHA(*reader)) {
                 // The first letter after letter gets capitalized. The rest get the opposite treatment.
                 if (!isPastFirstLetter) {
@@ -29,26 +42,29 @@ char* normalizarNyAp(char* frase)
                 }
             } else {
                 if (isPastFirstLetter) {
-                    // If we got to a space, that means its the end of a word.
+                    // If we got to a space or a comma, that means its the end of a word.
                     if (!isSurnameDone) {
                         // At the end of the first word (the surname), goes a comma.
                         *writer = ',';
                         writer++;
                         isSurnameDone = 1;
+                        // If there is not a non-letter character directly after the first space after the surname, we must shift the rest of the string on space forwards, or the program will get stuck on an infinite loop.
+                        if (!ISALPHA(*(reader + 1))) {
+                            shiftRight(reader, 1);
+                            reader++;
+                        }
                     }
-                    // If the surname is already succeeded by a comma, we don't bother being redundant.
-                    if (*reader != ',')
-                        *writer = *reader;
                     isPastFirstLetter = 0;
                 }
+                // We put a space after the comma, just in case there isn't one.
+                *writer = ' ';
             }
             // After writing each character, we move to the next free space.
             writer++;
         }
 
         // We only need to change these flags under two circumstances: At the first space after a word, and at the first letter after a space.
-        /// Estos dos if's (lineas 51 y 53) me dan un warning de poner parentesis alrededor del AND dentro del OR, pero no hay ningun OR???
-        if ( (isSpaceAfterLetter) && (!ISALPHA(*reader)))
+        if ((isSpaceAfterLetter) && (!ISALPHA(*reader)))
             isSpaceAfterLetter = 0;
         if ((!isSpaceAfterLetter) && (ISALPHA(*reader)))
             isSpaceAfterLetter = 1;
@@ -134,4 +150,3 @@ int mstrlen(const char* pl)
     }
     return result;
 }
-
