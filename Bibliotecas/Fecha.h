@@ -13,6 +13,11 @@ typedef struct {
 void setHoy(int dia, int mes, int an);
 int getHoy(t_fecha* hoy);
 
-int crearFecha(t_fecha* fecha, int dia, int mes, int anio);
-int cmpFecha(t_fecha* fecha1, t_fecha* fecha2);
+void mostrarFechaDMA(const t_fecha *fec);
+int ingresarFecha(t_fecha* fecha);
+int cant_dias(int mes, int anio);
+int es_fecha_valida(t_fecha* fecha);
+int cmpfecha(const t_fecha *fec1, const t_fecha *fec2);
+
+
 #endif // FECHA_H_INCLUDED

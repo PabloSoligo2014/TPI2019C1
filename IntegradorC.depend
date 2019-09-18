@@ -213,12 +213,13 @@
 
 1567536487 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.h
 
-1567538066 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.c
+1568812142 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.c
+	<stdio.h>
 	"Fecha.h"
 
-1567538059 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
+1568812118 c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\fecha.h
 
-1568636455 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
+1568810847 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\mstring.c
 	"mstring.h"
 	<string.h>
 	<stdlib.h>
@@ -241,7 +242,7 @@
 
 1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.h
 
-1568636623 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.c
+1568811662 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\tests.c
 	<stdio.h>
 	"Tests.h"
 	"TestsTipos.h"
@@ -250,20 +251,21 @@
 
 1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\teststipos.h
 
-1567535420 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.h
+1568811716 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.h
 
-1568636066 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.h
+1568810847 c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.h
 
-1568636490 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.c
+1568810847 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testscadenas.c
 	"TestsCadenas.h"
 	"../Bibliotecas/mstring.h"
 	<string.h>
 	<stdio.h>
 
-1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.c
+1568812231 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.c
 	"TestsFechas.h"
 	"../Bibliotecas/Fecha.h"
 	<string.h>
+	<stdio.h>
 
 1568224647 source:e:\february twenty-sixth, 2019\_university\programming i\final project\bibliotecas\citemmenu.c
 	<stdlib.h>

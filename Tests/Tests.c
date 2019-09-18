@@ -7,10 +7,10 @@
 
 int EjecutarTestsFechas(){
     char msg[500];
-    t_tstfun atest[] = {    &testCrearFechaInvalida,
-                            &testComparacionFechas01
-
-
+    t_tstfun atest[] = {    &testComparacionFechas01,
+                            &testComparacionFechas02,
+                            &testFechaValida01,
+                            &testFechaValida02
                         };
     puts("----------------------------------------------------------");
     //De esta manera no importa si tengo compilador de 16, 32 o 64 bits
