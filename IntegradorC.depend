@@ -232,7 +232,7 @@
 1567535420 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\bibliotecas\xplatform\xplatform.c
 	"XPlatform.h"
 
-1567542461 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
+1568989454 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -261,7 +261,7 @@
 	<string.h>
 	<stdio.h>
 
-1568812231 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.c
+1568989332 source:c:\users\pabli\git\tpi2019c2\tpi2019c2\tests\testsfechas.c
 	"TestsFechas.h"
 	"../Bibliotecas/Fecha.h"
 	<string.h>

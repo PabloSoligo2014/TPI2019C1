@@ -11,8 +11,8 @@ int testComparacionFechas01(char msg[]){
 
     strcpy(msg, "Comparacion de fechas");
     cmp = cmpfecha(&fecha1, &fecha2);
-    if(cmp>=0){
-        sprintf(msg, "Error, comparando fechas\n");
+    if(cmp>0){
+        sprintf(msg, "Error, comparando fechas 01\n");
         return 1;
     }
 
@@ -26,8 +26,8 @@ int testComparacionFechas02(char msg[]){
 
     strcpy(msg, "Comparacion de fechas");
     cmp = cmpfecha(&fecha1, &fecha2);
-    if(cmp<=0){
-        sprintf(msg, "Error, comparando fechas\n");
+    if(cmp<0){
+        sprintf(msg, "Error, comparando fechas 02\n");
         return 1;
     }
 

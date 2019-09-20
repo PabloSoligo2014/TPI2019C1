@@ -17,6 +17,13 @@ int main()
     CItemMenu* root = crearMenuRaiz();
 
     //Agregar menues desde aca
+    addSubmenu(root, "1", "Alumnos", NULL);
+        addSubmenu(root, "1.1", "Alumnos-Alta", NULL);
+        addSubmenu(root, "1.2", "Alumnos-Baja", NULL);
+        addSubmenu(root, "1.3", "Alumnos-Modificacion", NULL);
+
+
+
     addSubmenu(root, "9", "Tests", NULL);
         addSubmenu(root, "9.1", "Test de fechas", &EjecutarTestsFechas);
         addSubmenu(root, "9.2", "Test de cadenas", &EjecutarTestsCadenas);
