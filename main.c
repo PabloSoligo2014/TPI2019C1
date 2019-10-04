@@ -5,7 +5,7 @@
 #include "Bibliotecas/Fecha.h"
 #include "Bibliotecas/CItemMenu.h"
 #include "Tests/Tests.h"
-
+#include "Bibliotecas/Alumno.h"
 int main()
 {
 
@@ -18,7 +18,7 @@ int main()
 
     //Agregar menues desde aca
     addSubmenu(root, "1", "Alumnos", NULL);
-        addSubmenu(root, "1.1", "Alumnos-Alta", NULL);
+        addSubmenu(root, "1.1", "Alumnos-Alta", &ingresarAlumno);
         addSubmenu(root, "1.2", "Alumnos-Baja", NULL);
         addSubmenu(root, "1.3", "Alumnos-Modificacion", NULL);
 

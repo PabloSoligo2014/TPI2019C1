@@ -16,6 +16,7 @@ void mostrarFechaDMA(const t_fecha *fec);
 int crearFecha(t_fecha* fecha, int dia, int mes, int anio);
 int cant_dias(int mes, int anio);
 int es_fecha_valida(t_fecha* fecha);
+int ingresarFecha(t_fecha* fecha);
 
 int cmpfecha (const t_fecha *fec1, const t_fecha *fec2);
 

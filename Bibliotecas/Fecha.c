@@ -33,8 +33,16 @@ int crearFecha(t_fecha* fecha, int dia, int mes, int anio)
 
     }
     return 1;
+}
 
-
+int ingresarFecha(t_fecha* fecha)
+{
+    fecha->dia=0;
+    fecha->mes=0;
+    fecha->anio=0;
+    fflush(stdin);
+    scanf("%d%d%d",&fecha->dia,&fecha->mes,&fecha->anio);
+    return 1;
 }
 
 int es_fecha_valida(t_fecha* fecha)
